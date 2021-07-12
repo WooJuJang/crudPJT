@@ -6,14 +6,15 @@ import mongoose from 'mongoose';
 // ApolloServer는 스키마와 리졸버가 반드시 필요함
 const server = new ApolloServer({
   typeDefs,
-  resolvers
+  resolvers,
+  playground:true,
 });
 
 // listen 함수로 웹 서버 실행
 server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
 });
-
+//mongoose 연결
 mongoose
   .connect("mongodb://127.0.0.1:27017/MovieDB", {
     useUnifiedTopology:true,
@@ -28,17 +29,3 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
-
-//   .then(()=>{
-//     const MoviesSchema = new mongoose.Schema({
-//         id:Number,
-//         name:String,
-//         rating:Number,
-//       });
-//       var Movies=mongoose.model('Movies',MoviesSchema);
-//       var movie1=new Movies({id:4,name:"반지의제왕",rating:5});
-//       movie1.save(function(err,Movies){
-//         if (err) return console.error(err);
-//         console.log(movie1.name+"saved to movie collection.");
-//       });
-//   })
