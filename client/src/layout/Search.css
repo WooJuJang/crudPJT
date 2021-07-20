@@ -1,0 +1,13 @@
+.searchboxlayout{
+
+ 
+    text-align:center;
+    padding-top: 20px;
+}
+.searchbox{
+
+    border: 1px solid rgb(99, 101, 102);
+    border-radius: 6px;
+    padding-top: 3px;
+    padding-left: 2px;
+}

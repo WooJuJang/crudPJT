@@ -1,0 +1,33 @@
+table{
+    
+    border-collapse: collapse;
+   
+}
+.common-table{
+    
+    width:80%;
+    margin:0 auto;
+    text-align:center;
+    border-spacing: 0;
+}
+.common-table-header-column{
+    border-bottom: 2px solid #7a8d94;
+    padding: 0;
+    font-size: 18px;
+    padding: 10px 5px;
+    font-weight: bold;
+}
+.common-table-row{
+    position: relative;
+    border-bottom: 1px solid #aca8a8;
+}
+.common-table-row:hover {
+    position: relative;
+    background-color: #eceaea;
+    cursor: pointer;
+  }
+   
+  .common-table-column {
+    position: relative;
+    padding: 10px 5px;
+  }
