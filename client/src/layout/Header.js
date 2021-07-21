@@ -1,16 +1,14 @@
 import React, { useState } from 'react'
 import headerstyle from './Header.css';
-import Modal from './Modal';
+import Modal from '../components/Modal';
 function Header(){
     const[modalOpen,setModalOpen]=useState(false);
 
     const openModal=()=>{
       setModalOpen(true)
-      console.log(modalOpen)
     }
     const closeModal=()=>{
       setModalOpen(false)
-      console.log(modalOpen)
     }
     return (
         <div className="headermain">
